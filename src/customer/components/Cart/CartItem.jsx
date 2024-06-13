@@ -1,44 +1,43 @@
 import { RemoveCircleOutlineIcon } from "@mui/icons-material";
 import { Button, IconButton } from "@mui/material";
 import React from "react";
+import "./CartItem.css";
 
 const CartItem = () => {
   return (
-    <div className="p-5 shadow-lg border rounded-md">
-      <div className="flex items-center">
-        <div className="w-[5rem] h-[5rem] lg:w-[9rem] lg:h-[9rem]">
+    <div className="cart-item-container">
+      <div className="cart-item-details">
+        <div className="cart-item-image">
           <img
-            className="w-full h-full object-cover object-top"
+            className="cart-item-image-content"
             src=""
             alt=""
           />
         </div>
-        <div className="ml-5 space-y-1">
-          <p className="font-semibold">Men Slim Mid Rise Black Jeans </p>
-          <p className="opacity-70">Size: L,White</p>
-          <p className="opacity-70 mt-2">Seller: Crishtaliyo 2fashion</p>
-          <div className="flex space-x-5 items-center  text-gray-900 mt-6">
-            <p className="font-semibold">199</p>
-            <p className="opacity-50 line-through"> 211</p>
-            <p className="text-green-600 font-semibold">5% off</p>
+        <div className="cart-item-info">
+          <p className="cart-item-name">Men Slim Mid Rise Black Jeans </p>
+          <p className="cart-item-size opacity-70">Size: L,White</p>
+          <p className="cart-item-seller opacity-70 mt-2">Seller: Crishtaliyo 2fashion</p>
+          <div className="cart-item-prices flex space-x-5 items-center text-gray-900 mt-6">
+            <p className="cart-item-price font-semibold">199</p>
+            <p className="cart-item-old-price opacity-50 line-through"> 211</p>
+            <p className="cart-item-discount text-green-600 font-semibold">5% off</p>
           </div>
         </div>
       </div>
-      <div className="lg:flex items-center lg:space-x-10 pt-4">
-        <div className="flex items-center space-x-2">
+      <div className="cart-item-actions">
+        <div className="cart-item-quantity">
           <IconButton>
-            {" "}
-            <RemoveCircleOutlineIcon /> import from mui icon
+            {/* <RemoveCircleOutlineIcon /> */}
           </IconButton>
-          <span className="py-1 px-7 border rounded-sm">
-            <IconButton sx={{ color: "RGB(145 85 253)" }}>
-              {" "}
-              <RemoveCircleOutlineIcon />
+          <span className="cart-item-quantity-counter">
+            <IconButton className="cart-item-quantity-button" sx={{ color: "RGB(145 85 253)" }}>
+              {/* <RemoveCircleOutlineIcon /> */}
             </IconButton>
           </span>
         </div>
         <div>
-          <Button sx={{ color: "RGB(145 85 253)" }}>Remove</Button>
+          <Button className="cart-item-remove-button" sx={{ color: "RGB(145 85 253)" }}>Remove</Button>
         </div>
       </div>
     </div>

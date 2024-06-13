@@ -1,0 +1,49 @@
+.product_card {
+    text-align: center;
+    width: 300px;
+  }
+
+  .product_card img {
+    width: 100%;
+    height: max-content;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .product_card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .category_p {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .rating .star {
+    font-size: 1.2rem;
+    color: #ffc107;
+    margin-right: 0.2rem;
+  }
+  
+  .price {
+    font-size: 1rem;
+    font-weight: bold; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .original_price {
+    text-decoration: line-through;
+    color: #666;
+    margin-right: 1rem;
+  }
+  
+  .sale_price {
+    color: #f00;
+  }
