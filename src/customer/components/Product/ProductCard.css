@@ -1,0 +1,58 @@
+.productCard {
+    width: 15rem;
+    margin: 0.75rem;
+    cursor: pointer;
+}
+
+.productCard-container {
+    height: 20rem;
+}
+
+.productCard-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+
+.textPart {
+    background-color: #ffffff;
+    padding: 0.75rem;
+}
+
+.product-brand {
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.discounted-price {
+    font-weight: 600;
+}
+
+.custom-price {
+    opacity: 0.5;
+}
+
+.discount-price {
+    color: #32c18c;
+    font-weight: 600;
+}
+
+.productCard .textPart {
+    transition: transform .3s ease-out;
+}
+
+.productCard:hover .textPart {
+    transform: translateY(-1rem);
+}
+
+.productCard:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    ;
+}
